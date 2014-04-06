@@ -3,36 +3,32 @@
 import getopt, sys
 
 '''
-Thanks for your interest! I look forward to getting to know you
+Simple Python script to find out more about me
 '''
 def main():
-    opts, args = getopt.getopt(sys.argv[1:], "ncalm", 
-        ["name", "contact", "about", "links", "misc"])
+    opts, args = getopt.getopt(sys.argv[1:], "anclem", 
+        ["me", "name", "contact", "links", "experience", "misc"])
+    if ('--me','') in opts or ('-a','') in opts:
+        opts = zip(['-n','-c','-l','-e','-m'], ['','','','',''])
     try:
         for opt, arg in opts:
             if opt in ("-n", "--name"):
                 print "Andrea Fey"
             elif opt in ("-c", "--contact"):
-                print "andrea.fey at gmail.com  |  828.243.7502"
+                print "andrea.fey at gmail.com  |  828 243 7502"
             elif opt in ("-e", "--experience"):
-                print experience()
+                print { 'Java': 8.0, 'Scala': 0.5, 'Oracle': 7.5, 'Python': 2.0 }
             elif opt in ("-l", "--links"):
                 print "github.com/andreafey  |  linkedin.com/andreafey314159"
             elif opt in ("-m", "--misc"):
                 print unicode(u"rhymes with \u03C0")
-            elif opt in ("-a", "--me"):
-                print "something"
+    except Exception:
+        usage()
 
 def usage():
     print '''Usage:
-    
-def name():
-    return "Andrea Fey"
-
-def contact():
-    return "andrea.fey at gmail.com  |  828.423.0331"
-def experience():
-    return {'Java': 8.0, 'Scala': 0.5, 'Oracle': 7.5, 'Python': 2.0}
+        contact --me   find out more about me
+        '''
 
 if __name__ == "__main__":
     sys.exit(main())
