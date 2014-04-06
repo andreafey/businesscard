@@ -2,7 +2,8 @@
 layout: default
 title: andreafey.com
 ---
-```Python
+
+```python
 >> ./contact --me
 Andrea Fey
 andrea.fey at gmail.com  |  828 243 7502
@@ -11,6 +12,6 @@ github.com/andreafey  |  linkedin.com/andreafey314159
 rhymes with π
 ```
 
-```Python
+```python
 {% include contact %}
 ```
