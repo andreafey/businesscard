@@ -15,7 +15,7 @@ def main():
             if opt in ("-n", "--name"):
                 print "Andrea Fey"
             elif opt in ("-c", "--contact"):
-                print "<:andrea.fey@gmail.com>  |  828 243 7502"
+                print "<andrea.fey@gmail.com>  |  828 243 7502"
             elif opt in ("-e", "--experience"):
                 print { 'Java': 8.0, 'Scala': 0.5, 'SQL': 7.5, 'Python': 2.0 }
             elif opt in ("-l", "--links"):
