@@ -4,7 +4,7 @@ html {
 .site .highlight {
    margin: 10px 100px;
    padding: 10px;
-   border: 2px solid #cc6600;
+   border: 2px solid #cccccc;
    border-radius: 15px;
 }
 .site .highlight .text { color: #cccccc; }
