@@ -1,6 +1,9 @@
 html { 
    background-color: #777777;
- }
+}
+.header .highlight {
+   font-family: "Courier New", Courier, monospace
+}
 .site .highlight {
    margin: 10px 100px;
    padding: 10px;
