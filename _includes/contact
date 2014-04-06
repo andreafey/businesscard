@@ -9,17 +9,18 @@ def main():
     opts, args = getopt.getopt(sys.argv[1:], "anclem", 
         ["me", "name", "contact", "links", "experience", "misc"])
     if ('--me','') in opts or ('-a','') in opts:
-        opts = zip(['-n','-c','-l','-e','-m'], ['','','','',''])
+        opts = zip(['-n','-c','-l','-e','-m'], [''] * 6)
     try:
         for opt, arg in opts:
             if opt in ("-n", "--name"):
                 print "Andrea Fey"
             elif opt in ("-c", "--contact"):
-                print "<andrea.fey@gmail.com>  |  828 243 7502"
+                print "andrea * web at mailnull * com  |  828 423 0331"
+            # experience in years
             elif opt in ("-e", "--experience"):
                 print { 'Java': 8.0, 'Scala': 0.5, 'SQL': 7.5, 'Python': 2.0 }
             elif opt in ("-l", "--links"):
-                print "<andreafey.com>  |  <github.com/andreafey>  |  <linkedin.com/andreafey314159>"
+                print "andreafey.com  |  github.com/andreafey  |  linkedin.com/andreafey314159"
             elif opt in ("-m", "--misc"):
                 print unicode(u"rhymes with \u03C0")
     except Exception:
