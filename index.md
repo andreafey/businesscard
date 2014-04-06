@@ -3,7 +3,7 @@ layout: default
 title: andreafey.com
 ---
 
-```python
+```
 >> ./contact --me
 Andrea Fey
 andrea.fey at gmail.com  |  828 243 7502
