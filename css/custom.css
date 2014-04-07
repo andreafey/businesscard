@@ -4,6 +4,9 @@ html {
 .highlight .header {
    font-family: "Courier New", Courier, monospace
 }
+.highlight img {
+  margin-top: 10px;
+}
 .site .highlight {
    margin: 10px 100px;
    padding: 10px;
