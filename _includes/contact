@@ -6,16 +6,18 @@ import getopt, sys
 Find out more about me
 '''
 def main():
-    opts, args = getopt.getopt(sys.argv[1:], "anclem", 
+    opts, args = getopt.getopt(sys.argv[1:], "antclem", 
         ["me", "name", "contact", "links", "experience", "misc"])
     if ('--me','') in opts or ('-a','') in opts:
-        opts = zip(['-n','-c','-l','-e','-m'], [''] * 6)
+        opts = zip(['-n', '-t', '-e', '-c', '-l', '-m'], [''] * 7)
     elif (len(opts) < 1):
         usage()
     try:
         for opt, arg in opts:
             if opt in ("-n", "--name"):
                 print "Andrea Fey"
+            elif opt in ("-t", "--trade"):
+                print "Software Engineer"
             elif opt in ("-c", "--contact"):
                 print "andrea * web at mailnull * com  ||  828 423 0331"
             # experience in years
@@ -30,7 +32,7 @@ def main():
 
 def usage():
     print '''Usage:
-        contact --me   find out more about me
+        contact --me   Find out more about me
         '''
 
 if __name__ == "__main__":
