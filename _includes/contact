@@ -10,6 +10,8 @@ def main():
         ["me", "name", "contact", "links", "experience", "misc"])
     if ('--me','') in opts or ('-a','') in opts:
         opts = zip(['-n','-c','-l','-e','-m'], [''] * 6)
+    elif (len(opts) < 1):
+        usage()
     try:
         for opt, arg in opts:
             if opt in ("-n", "--name"):
@@ -20,7 +22,7 @@ def main():
             elif opt in ("-e", "--experience"):
                 print { 'Java': 8.0, 'Scala': 0.5, 'SQL': 7.5, 'Python': 2.0 }
             elif opt in ("-l", "--links"):
-                print "andreafey.com  |  github.com/andreafey  |  linkedin.com/andreafey314159"
+                print "www.andreafey.com  |  github.com/andreafey  |  @rhymmespi  |  linkedin.com/andreafey314159"
             elif opt in ("-m", "--misc"):
                 print unicode(u"rhymes with \u03C0")
     except Exception:
