@@ -3,7 +3,7 @@
 import getopt, sys
 
 '''
-Simple Python script to find out more about me
+Find out more about me
 '''
 def main():
     opts, args = getopt.getopt(sys.argv[1:], "anclem", 
