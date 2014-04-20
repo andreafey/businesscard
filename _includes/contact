@@ -7,7 +7,7 @@ Find out more about me
 '''
 def main():
     opts, args = getopt.getopt(sys.argv[1:], "antclem", 
-        ["me", "name", "contact", "links", "experience", "misc"])
+        ["me", "name", "trade", "contact", "links", "experience", "misc"])
     if ('--me','') in opts or ('-a','') in opts:
         opts = zip(['-n', '-t', '-e', '-c', '-l', '-m'], [''] * 7)
     elif (len(opts) < 1):
