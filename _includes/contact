@@ -19,7 +19,7 @@ def main():
             elif opt in ("-t", "--trade"):
                 print "Software Engineer"
             elif opt in ("-c", "--contact"):
-                print "andrea * web at mailnull * com  ||  828 423 0331"
+                print "andrea &middot; web at mailnull &middot; com  ||  828 423 0331"
             # experience in years
             elif opt in ("-e", "--experience"):
                 print { 'Java': 8.0, 'Scala': 0.5, 'SQL': 7.5, 'Python': 2.0 }
