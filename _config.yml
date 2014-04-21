@@ -1,3 +1,4 @@
 name: andreafey.com
 markdown: redcarpet
 pygments: true
+pygments_options: ['linenos=True']
