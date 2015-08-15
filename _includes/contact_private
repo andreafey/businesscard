@@ -20,7 +20,7 @@ def main():
                 print "andrea.fey@gmail.com  ||  828.243.7502"
             # experience in years
             elif opt in ("-e", "--experience"):
-                print { 'Java': 8.0, 'Scala': 0.5, 'SQL': 7.5, 'Python': 2.0 }
+                print { 'Scala': 2.11.7, 'PostgreSQL': 9.4.4, 'Java': 8.0, 'Backbone': 1.2.1, 'Python': 2.7 }
             elif opt in ("-l", "--links"):
                 print "www.andreafey.com  |  github.com/andreafey  |  @rhymmespi  |  linkedin.com/andreafey314159"
             elif opt in ("-m", "--misc"):
