@@ -1,6 +1,6 @@
 ---
 layout: default
-title: andreafey.com
+title: http://andreafey.com
 ---
 
 ```python
