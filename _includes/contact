@@ -22,7 +22,7 @@ def main():
                 print "andrea &middot; web at mailnull &middot; com  ||  828 423 0331"
             # experience in years
             elif opt in ("-e", "--experience"):
-                print { 'Scala': 2.11.7, 'PostgreSQL': 9.4.4, 'Java': 8.0, 'Backbone': 1.2.1, 'Python': 2.7 }
+                print { 'Scala': 1.5, 'SQL': 8.5, 'Java': 8.0, 'Backbone': 1.0, 'Python': 2.0 }
             elif opt in ("-l", "--links"):
                 print "www.andreafey.com  ||  github.com/andreafey  ||  @rhymespi  ||  linkedin.com/andreafey314159"
             elif opt in ("-m", "--misc"):
